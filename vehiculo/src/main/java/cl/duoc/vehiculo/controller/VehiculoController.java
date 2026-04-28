@@ -45,7 +45,7 @@ public class VehiculoController {
         
         Vehiculo v = vehiculoService.sellVehicle(id);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(v);
+        return ResponseEntity.ok(v);
     }
     
 }
