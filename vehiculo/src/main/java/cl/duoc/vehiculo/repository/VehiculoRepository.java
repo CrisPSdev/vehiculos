@@ -16,9 +16,9 @@ public interface VehiculoRepository extends JpaRepository<Vehiculo, Long> {
     long countByEstado(Estado e);
 
     // Retorna true si existe un vehiculo con el id ingresado, retorna falso sino
-    boolean existById(Long id);
+    boolean existsById(Long id);
 
-    boolean existByPatente(String patente);
+    boolean existsByPatente(String patente);
     // seccion para buscar por tipos //
     
     Optional<Vehiculo> findByPatente(String patente);

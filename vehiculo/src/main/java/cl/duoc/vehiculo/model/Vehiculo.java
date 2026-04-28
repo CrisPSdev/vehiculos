@@ -10,7 +10,7 @@ import lombok.*;
 
 
 @Entity
-@Table(name = "vehiculo")
+@Table(name = "vehicle")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -24,7 +24,7 @@ public class Vehiculo {
 
     @Column(nullable = false, unique = false)
     @NotBlank(message = "El modelo no puede estar vacio")
-    @Size(min = 3, max = 30)
+    @Size(min = 2, max = 30)
     private String modelo;
 
     @Column(nullable = false, unique = false)
